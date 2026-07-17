@@ -1,0 +1,20 @@
+# ──────────────────────────────────────────────────
+# Link        https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem?isFullScreen=true
+# Problem     Find the Runner-Up Score!  
+# Difficulty  Easy
+# Subdomain   Basic Data Types
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-07-17, 11:01 p.m.
+# ──────────────────────────────────────────────────
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    arr.sort(reverse=True)
+    lar=arr[0]
+    for i in range(0,n):
+        if arr[i]<lar:
+            print(arr[i])
+            break
